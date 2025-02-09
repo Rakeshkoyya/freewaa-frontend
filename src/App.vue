@@ -1,18 +1,24 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import NavbarElement from '@/components/NavbarElement.vue';
+import FooterElement from '@/components/FooterElement.vue';
+import HomeView from '@/HomeView.vue';
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+ 	<!-- Navbar start -->
+   <navbar-element></navbar-element>
+	<!-- Navbar end -->
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+	<!-- Rendered view start -->
+	<home-view></home-view>
+	<!-- Rendered view end -->
 
- 
+
+
+	<!-- Footer start -->
+	<footer-element></footer-element>
+	<!-- Footer end -->
 </template>
 
 <style scoped>
